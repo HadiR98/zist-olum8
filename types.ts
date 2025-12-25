@@ -20,4 +20,16 @@ export interface LessonSectionData {
   content: string[];
 }
 
+export interface ChapterData {
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+  color: string;
+  lessons: LessonSectionData[];
+  flashcards: FlashcardData[];
+  quiz: QuizQuestion[];
+  funFacts: string[];
+}
+
 export type ViewState = 'HOME' | 'CHAPTER_MENU' | 'LESSON' | 'FLASHCARDS' | 'QUIZ' | 'FUN_FACTS' | 'CHALLENGE';
